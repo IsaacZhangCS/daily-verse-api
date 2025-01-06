@@ -29,3 +29,8 @@ def get_verse_of_the_day():
             }
         }
     }
+
+
+@app.get("/health-check")
+def health_check():
+    return {"status": "ok"}
